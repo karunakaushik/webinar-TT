@@ -1,0 +1,138 @@
+.main_outercontainer{
+    display: flex;
+    flex-direction: column;
+    /* background-image: url(../img/bg.png); */
+    /* height: 100vh; */
+
+}
+.main_innerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+}
+.descriptionBox{
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+.innerBox{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.innerBox h1{
+    font-size: 40px;
+
+}
+.innerBox p{
+    font-size: 22px;
+}
+.imageBox{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.imageBox img{
+    width: 79%;
+}
+
+.upcomingWebinarDiv, .pastWebinarDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upcomingWebinarDiv h1{
+    font-size: 40px;
+}
+.cardDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDiv{
+    transition: transform .5s;
+}
+/* .cardDiv::after{
+    opacity: 0;
+    z-index: -1;
+} */
+.cardDiv:hover{
+    transform: scale3d(1.006, 1.006, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+}
+
+
+.registerDiv{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 5px 10px 0px
+}
+.registerDiv button{
+    border-radius: 20px;
+    background: navy;
+    color: white;
+    border: none;
+    font-size: 19px;
+    outline: 0!important;
+    padding: 6px 15px 5px 15px;
+    cursor: pointer;
+}
+.pastWebinarDiv h1{
+    font-size: 40px;
+}
+.webinarLinkDiv{
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.webinarLinkDiv img{
+    width: 400px;
+    cursor: pointer;
+}
+.pastWebinarDiv .webinarLinkDiv{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+@media screen and (max-width:767px){
+    .main_innerContainer{
+        flex-direction: column;
+    }
+    .descriptionBox, .imageBox{
+        width: 100%;
+        justify-content: center;
+    }
+    .innerBox{
+        width: 80%;
+    }
+    .imageBox img{
+        width: 70%;
+    }
+    .innerBox h1{
+        font-size: 20px;
+    }
+    .upcomingWebinarDiv h1{
+        font-size: 30px;
+    }
+    .webinarLinkDiv img{
+        width: 225px;
+    }
+    .webinarLinkDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .registerDiv button{
+        font-size: 15px;
+    }
+
+}

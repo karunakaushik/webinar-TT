@@ -1,0 +1,78 @@
+.outerContainerFooter{
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 20vh; */
+    background-color: #24324a;
+}
+.innerContainerFooter{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ttLogo{
+    width: 60%;
+    padding: 15px 0px 0px 0px;
+
+}
+.whatsAppDiv{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.whatsAppDiv p{
+    font-size: 25px;
+}
+.socialDiv{
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.iconDiv{
+    width: 30px;
+}
+.copyRight{
+    padding: 10px;
+    background-color: #1d293e;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.heart{
+    width:25px;
+    padding: 4px;
+}
+.linkdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logolink{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:760px){
+    .innerContainerFooter{
+        width: 50%;
+    }
+    .socialDiv , .whatsAppDiv{
+        width: 100%;
+    }
+    .ttLogo{
+        width: 100%;
+    }
+    .iconDiv{
+        width: 25px;
+    }
+}

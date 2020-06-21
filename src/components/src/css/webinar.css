@@ -1,0 +1,124 @@
+.outercontainer{
+    display: flex;
+    flex-direction: column;
+}
+.imageofWebinarDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+.posterDiv{
+    display: flex;
+    width: 75%;
+    height: 100%;
+}
+.posterDiv img{
+    width:  -webkit-fill-available;
+    height: auto;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.webinarDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.innerdetailsDiv{
+    padding: 25px;
+    width: 70%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    height: fit-content;
+}
+.innerdetailsDiv p{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+.innerdetailsDiv p img{
+    
+    width: 25px;
+
+}
+.queryDiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* align-items: centers; */
+}
+.innerqueryDiv{
+    display: flex;
+    width: 75%;
+
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+.formContainer label{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+.askAnyThing{
+    width: 60%;
+    height: 70px;
+    outline: 0!important;
+
+}
+.submitbutton{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0!important;
+}
+.phoneNo{
+    width: 60%;
+    height: 30px;
+    font-size: 15px;
+}
+@media screen and (max-width:767px){
+      .posterDiv{
+        width: 85%;
+      }
+      .posterDiv img{
+          width: -webkit-fill-available;
+      }
+      .imageofWebinarDiv{
+          height: auto;
+      }
+      
+      .askAnyThing{
+          width: auto;
+      }
+      .formContainer label{
+          font-size: 20px;
+      }
+      .innerdetailsDiv h1{
+          font-size: 20px;
+      }
+      .innerdetailsDiv h1{
+          font-size: 20px;
+      }
+}
+
+@media screen and (min-width:768px) and (max-width:850px){
+
+
+}
