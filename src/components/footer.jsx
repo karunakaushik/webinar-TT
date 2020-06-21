@@ -16,9 +16,9 @@ export default class Footer extends Component{
                 <a className="logolink" href="https://techtable.co.in/"><img className="ttLogo" src={TTLogo} alt="TTLogo" /></a>
                 {/* <a className="logolink" href="https://techtable.co.in/"><img className="ttLogo" src={TTText} alt="TTText" /></a> */}
                     <div className="socialDiv"> 
-                        <a className="linkdiv" href="https://www.facebook.com/techtable.co.in"><img src={FbIcon} alt="FbIcon" className="iconDiv" /></a>
-                        <a className="linkdiv" href="https://www.instagram.com/official_techtable/"><img src={InstaIcon} alt="InstaIcon" className="iconDiv"  /></a>
-                        <a className="linkdiv" href="https://www.linkedin.com/company/tech-table/"><img src={LinkedinIcon} alt="LinkedinIcon" className="iconDiv"  /></a>
+                        <div><a className="linkdiv" href="https://www.facebook.com/techtable.co.in"><img src={FbIcon} alt="FbIcon" className="iconDiv" /></a></div>
+                        <div><a className="linkdiv" href="https://www.instagram.com/official_techtable/"><img src={InstaIcon} alt="InstaIcon" className="iconDiv"  /></a></div>
+                        <div><a className="linkdiv" href="https://www.linkedin.com/company/tech-table/"><img src={LinkedinIcon} alt="LinkedinIcon" className="iconDiv"  /></a></div>
                     </div>
                     <div className="whatsAppDiv">
                         <p>Join Us :</p>
