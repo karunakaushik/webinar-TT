@@ -26,7 +26,7 @@ export default class App extends React.Component {
             <Switch>
                 <React.Fragment >
 
-                    <Route exact path="/"
+                    <Route exact path="/webinar-TT"
                         component={Main}
                     /> 
                     <Route path="/footer" component={Footer}
