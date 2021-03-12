@@ -7,33 +7,46 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 const Loading = () => {
-  return <Loader>loading...</Loader>
+    return <Loader > loading... < /Loader>
 }
 const Main = Loadable({
-  loader: () => import('./components/webinarMainPage'),
-  loading: Loading
+    loader: () =>
+        import ('./components/webinarMainPage'),
+    loading: Loading
 });
 const Webinar = Loadable({
-  loader: () => import('./components/webinar'),
-  loading: Loading
+    loader: () =>
+        import ('./components/webinar'),
+    loading: Loading
 })
-export default class App extends React.Component{
-  render() {
-    return (
-      <BrowserRouter>
-                <Switch>
-                    <React.Fragment>
-                        
-                        <Route exact path="/" component={Main} />
-                        <Route path="/footer" component={Footer} />
-                        <Route exact path="/ongoingwebinar" component={Webinar} />
-  
-  
-                    </React.Fragment>
-                </Switch>
-            </BrowserRouter>
-    )
-  }
+export default class App extends React.Component {
+    render() {
+        return ( <
+            BrowserRouter >
+            <
+            Switch >
+            <
+            React.Fragment >
+
+            <
+            Route exact path = "/"
+            component = { Main }
+            /> <
+            Route path = "/footer"
+            component = { Footer }
+            /> <
+            Route path = "/test"
+            component = { Footer }
+            /> <
+            Route exact path = "/ongoingwebinar"
+            component = { Webinar }
+            />
+
+
+            <
+            /React.Fragment> <
+            /Switch> <
+            /BrowserRouter>
+        )
+    }
 }
-
-
